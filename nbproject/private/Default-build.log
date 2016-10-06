@@ -1,0 +1,64 @@
+g++ -c -o objects/RTIMULibDrive.o RTIMULibDrive.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTMath.o RTIMULib/RTMath.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUHal.o RTIMULib/RTIMUHal.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+RTIMULib/RTIMUHal.cpp:397:28: warning: unused parameter 'milliSeconds' [-Wunused-parameter]
+void RTIMUHal::delayMs(int milliSeconds)
+                           ^
+1 warning generated.
+g++ -c -o objects/RTFusion.o RTIMULib/RTFusion.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTFusionKalman4.o RTIMULib/RTFusionKalman4.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTFusionRTQF.o RTIMULib/RTFusionRTQF.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUSettings.o RTIMULib/RTIMUSettings.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUAccelCal.o RTIMULib/RTIMUAccelCal.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUMagCal.o RTIMULib/RTIMUMagCal.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+RTIMULib/RTIMUMagCal.cpp:118:14: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+        if ((abs(calData.x() - m_magCalSamples[index].x()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING) &&
+             ^
+RTIMULib/RTIMUMagCal.cpp:118:14: note: use function 'std::abs' instead
+        if ((abs(calData.x() - m_magCalSamples[index].x()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING) &&
+             ^~~
+             std::abs
+RTIMULib/RTIMUMagCal.cpp:118:14: note: include the header <cmath> or explicitly provide a declaration for 'std::abs'
+RTIMULib/RTIMUMagCal.cpp:119:14: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+            (abs(calData.y() - m_magCalSamples[index].y()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING) &&
+             ^
+RTIMULib/RTIMUMagCal.cpp:119:14: note: use function 'std::abs' instead
+            (abs(calData.y() - m_magCalSamples[index].y()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING) &&
+             ^~~
+             std::abs
+RTIMULib/RTIMUMagCal.cpp:119:14: note: include the header <cmath> or explicitly provide a declaration for 'std::abs'
+RTIMULib/RTIMUMagCal.cpp:120:14: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+            (abs(calData.z() - m_magCalSamples[index].z()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING)) {
+             ^
+RTIMULib/RTIMUMagCal.cpp:120:14: note: use function 'std::abs' instead
+            (abs(calData.z() - m_magCalSamples[index].z()) < RTIMUCALDEFS_ELLIPSOID_MIN_SPACING)) {
+             ^~~
+             std::abs
+RTIMULib/RTIMUMagCal.cpp:120:14: note: include the header <cmath> or explicitly provide a declaration for 'std::abs'
+3 warnings generated.
+g++ -c -o objects/RTIMU.o RTIMULib/IMUDrivers/RTIMU.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUNull.o RTIMULib/IMUDrivers/RTIMUNull.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+In file included from RTIMULib/IMUDrivers/RTIMUNull.cpp:24:
+RTIMULib/IMUDrivers/RTIMUNull.h:55:14: warning: private field 'm_timestamp' is not used [-Wunused-private-field]
+    uint64_t m_timestamp;
+             ^
+1 warning generated.
+g++ -c -o objects/RTIMUMPU9150.o RTIMULib/IMUDrivers/RTIMUMPU9150.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUMPU9250.o RTIMULib/IMUDrivers/RTIMUMPU9250.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUGD20HM303D.o RTIMULib/IMUDrivers/RTIMUGD20HM303D.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUGD20M303DLHC.o RTIMULib/IMUDrivers/RTIMUGD20M303DLHC.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUGD20HM303DLHC.o RTIMULib/IMUDrivers/RTIMUGD20HM303DLHC.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMULSM9DS0.o RTIMULib/IMUDrivers/RTIMULSM9DS0.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMULSM9DS1.o RTIMULib/IMUDrivers/RTIMULSM9DS1.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUBMX055.o RTIMULib/IMUDrivers/RTIMUBMX055.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTIMUBNO055.o RTIMULib/IMUDrivers/RTIMUBNO055.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTPressure.o RTIMULib/IMUDrivers/RTPressure.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTPressureBMP180.o RTIMULib/IMUDrivers/RTPressureBMP180.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTPressureLPS25H.o RTIMULib/IMUDrivers/RTPressureLPS25H.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTPressureMS5611.o RTIMULib/IMUDrivers/RTPressureMS5611.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -c -o objects/RTPressureMS5637.o RTIMULib/IMUDrivers/RTPressureMS5637.cpp -pipe -O2 -Wall -W  -I. -I./RTIMULib
+g++ -Wl,-O1 -o Output/RTIMULibDrive objects/RTIMULibDrive.o objects/RTMath.o objects/RTIMUHal.o objects/RTFusion.o objects/RTFusionKalman4.o objects/RTFusionRTQF.o objects/RTIMUSettings.o objects/RTIMUAccelCal.o objects/RTIMUMagCal.o objects/RTIMU.o objects/RTIMUNull.o objects/RTIMUMPU9150.o objects/RTIMUMPU9250.o objects/RTIMUGD20HM303D.o objects/RTIMUGD20M303DLHC.o objects/RTIMUGD20HM303DLHC.o objects/RTIMULSM9DS0.o objects/RTIMULSM9DS1.o objects/RTIMUBMX055.o objects/RTIMUBNO055.o objects/RTPressure.o objects/RTPressureBMP180.o objects/RTPressureLPS25H.o objects/RTPressureMS5611.o objects/RTPressureMS5637.o  -L/usr/lib/arm-linux-gnueabihf
+ld: warning: directory not found for option '-L/usr/lib/arm-linux-gnueabihf'
+ld: unknown option: -O1
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Output/RTIMULibDrive] Error 1

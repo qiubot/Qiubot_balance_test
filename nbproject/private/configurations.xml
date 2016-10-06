@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="objects">
+      </df>
+      <df name="Output">
+      </df>
+      <df name="RTIMULib">
+        <df name="IMUDrivers">
+          <in>RTHumidity.cpp</in>
+          <in>RTHumidity.h</in>
+          <in>RTHumidityDefs.h</in>
+          <in>RTHumidityHTS221.cpp</in>
+          <in>RTHumidityHTS221.h</in>
+          <in>RTHumidityHTU21D.cpp</in>
+          <in>RTHumidityHTU21D.h</in>
+          <in>RTIMU.cpp</in>
+          <in>RTIMU.h</in>
+          <in>RTIMUBMX055.cpp</in>
+          <in>RTIMUBMX055.h</in>
+          <in>RTIMUBNO055.cpp</in>
+          <in>RTIMUBNO055.h</in>
+          <in>RTIMUDefs.h</in>
+          <in>RTIMUGD20HM303D.cpp</in>
+          <in>RTIMUGD20HM303D.h</in>
+          <in>RTIMUGD20HM303DLHC.cpp</in>
+          <in>RTIMUGD20HM303DLHC.h</in>
+          <in>RTIMUGD20M303DLHC.cpp</in>
+          <in>RTIMUGD20M303DLHC.h</in>
+          <in>RTIMULSM9DS0.cpp</in>
+          <in>RTIMULSM9DS0.h</in>
+          <in>RTIMULSM9DS1.cpp</in>
+          <in>RTIMULSM9DS1.h</in>
+          <in>RTIMUMPU9150.cpp</in>
+          <in>RTIMUMPU9150.h</in>
+          <in>RTIMUMPU9250.cpp</in>
+          <in>RTIMUMPU9250.h</in>
+          <in>RTIMUNull.cpp</in>
+          <in>RTIMUNull.h</in>
+          <in>RTPressure.cpp</in>
+          <in>RTPressure.h</in>
+          <in>RTPressureBMP180.cpp</in>
+          <in>RTPressureBMP180.h</in>
+          <in>RTPressureDefs.h</in>
+          <in>RTPressureLPS25H.cpp</in>
+          <in>RTPressureLPS25H.h</in>
+          <in>RTPressureMS5611.cpp</in>
+          <in>RTPressureMS5611.h</in>
+          <in>RTPressureMS5637.cpp</in>
+          <in>RTPressureMS5637.h</in>
+        </df>
+        <in>RTFusion.cpp</in>
+        <in>RTFusion.h</in>
+        <in>RTFusionKalman4.cpp</in>
+        <in>RTFusionKalman4.h</in>
+        <in>RTFusionRTQF.cpp</in>
+        <in>RTFusionRTQF.h</in>
+        <in>RTIMUAccelCal.cpp</in>
+        <in>RTIMUAccelCal.h</in>
+        <in>RTIMUCalDefs.h</in>
+        <in>RTIMUHal.cpp</in>
+        <in>RTIMUHal.h</in>
+        <in>RTIMULib.h</in>
+        <in>RTIMULibDefs.h</in>
+        <in>RTIMUMagCal.cpp</in>
+        <in>RTIMUMagCal.h</in>
+        <in>RTIMUSettings.cpp</in>
+        <in>RTIMUSettings.h</in>
+        <in>RTMath.cpp</in>
+        <in>RTMath.h</in>
+        <in>pid.cpp</in>
+        <in>pid.h</in>
+        <in>pid_test.cpp</in>
+      </df>
+      <in>RTIMULibDrive.cpp</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>root@rye.hw327:22</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <console-type>2</console-type>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
