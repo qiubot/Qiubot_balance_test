@@ -207,7 +207,8 @@ int main()
                 sprintf(str, "<%d:%d:%d:%d>", (int)motor_delay[0], (int)motor_delay[1], (int)motor_delay[2], (int)motor_delay[3]);
                 serialPuts(fd, str);
                 serialFlush (fd);
-//                printf("delay: m1: %f m2: %f m3: %f m4: %f\r", motor_delay[0], motor_delay[1], motor_delay[2], motor_delay[3]);
+                sleep(100000);
+                printf("delay: m1: %f m2: %f m3: %f m4: %f\r", motor_delay[0], motor_delay[1], motor_delay[2], motor_delay[3]);
                 //printf("imu data: roll: %f pitch: %f yaw: %f\r", imu_roll, imu_pitch, imu_yaw);
                 //printf("Sample rate %d: %s\r", sampleRate, RTMath::displayDegrees("", imuData.fusionPose));
                 fflush(stdout);

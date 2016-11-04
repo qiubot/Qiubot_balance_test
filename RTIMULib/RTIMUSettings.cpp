@@ -768,13 +768,16 @@ bool RTIMUSettings::loadSettings()
         //  MPU9250 settings
 
         } else if (strcmp(key, RTIMULIB_MPU9250_GYROACCEL_SAMPLERATE) == 0) {
-            m_MPU9250GyroAccelSampleRate = atoi(val);
+            //m_MPU9250GyroAccelSampleRate = atoi(val);
+            m_MPU9250GyroAccelSampleRate = 400;
         } else if (strcmp(key, RTIMULIB_MPU9250_COMPASS_SAMPLERATE) == 0) {
             m_MPU9250CompassSampleRate = atoi(val);
         } else if (strcmp(key, RTIMULIB_MPU9250_GYRO_LPF) == 0) {
-            m_MPU9250GyroLpf = atoi(val);
+            //m_MPU9250GyroLpf = atoi(val);
+            m_MPU9250GyroLpf = 1;
         } else if (strcmp(key, RTIMULIB_MPU9250_ACCEL_LPF) == 0) {
-            m_MPU9250AccelLpf = atoi(val);
+            //m_MPU9250AccelLpf = atoi(val);
+            m_MPU9250AccelLpf = 1;
         } else if (strcmp(key, RTIMULIB_MPU9250_GYRO_FSR) == 0) {
             m_MPU9250GyroFsr = atoi(val);
         } else if (strcmp(key, RTIMULIB_MPU9250_ACCEL_FSR) == 0) {
